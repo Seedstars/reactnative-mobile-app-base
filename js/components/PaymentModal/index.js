@@ -78,7 +78,7 @@ const mapDispatchToProps = (dispatch) => {
     return {
         dispatch,
         actionsCloseBuyDeviceModal: bindActionCreators(closeBuyDeviceModal, dispatch),
-        orderDevicePostFormsSuccess: bindActionCreators( orderDevicePostFormsSuccess, dispatch)
+        orderDevicePostFormsSuccess: bindActionCreators(orderDevicePostFormsSuccess, dispatch)
     };
 };
 

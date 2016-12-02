@@ -5,7 +5,6 @@ import { AppEventsLogger } from 'react-native-fbsdk';
 import Config from 'react-native-config';
 
 
-
 export default class AnalyticsProvider extends Component {
     static propTypes = {
         children: React.PropTypes.shape()
