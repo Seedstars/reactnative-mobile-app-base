@@ -1,0 +1,45 @@
+# Build Environment
+build_environment: Ubuntu 14.04
+
+# variables used for slack comunication
+env:
+  global:
+    - PROJECT="seedstars-base-mobile"
+
+language: node_js
+
+python:
+  - 3.4
+
+# only build when certain Git branches are updated
+branches:
+  only:
+    - master
+    - staging
+
+install:
+  - wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.31.6/install.sh | bash
+  - bash
+  - nvm install v4.0.0
+  - npm install
+
+# configuration to run tests
+before_script:
+  - mkdir -p shippable/testresults
+  - mkdir -p shippable/codecoverage
+  - git submodule init
+  - git submodule update
+  - ./scripts/get_static_validation.sh
+
+
+# run test scripts
+script:
+  - ./scripts/test_shippable_mobileapp.sh
+
+# Notification
+notifications:
+  email:
+    recipients:
+      - ci@seedstarslabs.com
+    on_success: change
+    on_failure: change
