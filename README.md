@@ -8,8 +8,8 @@ We build on the shoulders of giants with the following technologies:
 
 * [React](https://github.com/facebook/react)
 * [React Native](https://github.com/facebook/react-native)
-* [Redux](https://github.com/rackt/redux)'s futuristic [Flux](https://facebook.github.io/react/blog/2014/05/06/flux.html) implementation
-* [Redux Dev Tools](https://github.com/rackt/redux-devtools) for next generation DX (developer experience). Watch [Dan Abramov's talk](https://www.youtube.com/watch?v=xsSnOQynTHs)
+* [Redux](https://github.com/reactjs/redux) Predictable state container for JavaScript apps 
+* [Redux Dev Tools](https://github.com/gaearon/redux-devtools) DevTools for Redux with hot reloading, action replay, and customizable UI. Watch [Dan Abramov's talk](https://www.youtube.com/watch?v=xsSnOQynTHs)
 * [Redux Thunk](https://github.com/gaearon/redux-thunk) Thunk middleware for Redux - used in async actions
 * [Babel](http://babeljs.io) for ES6 and ES7 magic
 * [React Native Config](https://github.com/luggit/react-native-config) Bring some 12 factor love to your mobile apps!
