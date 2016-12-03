@@ -86,13 +86,13 @@ Start react-native development server
 
 * `$ npm run start`
 
-Run app on emulador
+Run app on emulator
 
 * `$ ENVFILE=.env.local_dev react-native run-android  # or any other .env`
 
 ## Testing
 
-Confirm that the current app version dont have a staging version in codepush. other wise the will download the update.
+Confirm that the current app version don't have a staging version in codepush, other wise it will download the update.
 
 * `code-push deployment ls "Seedstars Base" -k`
 
@@ -110,11 +110,11 @@ Frontend (javascript static analysis)
 * `$ cd android && ENVFILE=.env.production ./gradlew assembleRelease`
 
 ### CodePush Deploy
- if you don't are register in Codepush do:
+ if you have not registered in Codepush do:
 
  * `$ code-push register`
 
- The person who initial register the app should run:
+ In case you have already registered you should run:
 
  * `$ code-push collaborator add <appName> <collaboratorEmail>`
 
@@ -122,8 +122,8 @@ Frontend (javascript static analysis)
 
  * `$ code-push release-react "Seedstars Base" android -m --description "Message"`
 
-The version are now in staging. After confirm that everything its ok, promote the version to Production.
+The version is now in staging. After confirming that everything is ok, promote the version to Production.
 
 * `$ code-push promote "Seedstars Base" Staging Production`
 
-Any trouble check the [Documentation](http://microsoft.github.io/code-push/docs/getting-started.html)
+In case you face any difficulty, please check the [Documentation](http://microsoft.github.io/code-push/docs/getting-started.html)
